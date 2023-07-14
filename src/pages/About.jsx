@@ -161,8 +161,8 @@ const About = () => {
               <span className=" bg-primary px-3 py-2">Proficiencies</span>
             </h1>
 
-            <div className=" grid grid-cols-3 lg:grid-cols-3 mt-10">
-              <div className=" w-[188px] h-[188px] rounded bg-black">
+            <div className=" grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 md:gap-0 mt-10 ">
+              <div className=" w-auto md:w-[188px] h-[188px] rounded bg-black">
                 <img className=" block mx-auto pt-5" src="figma.svg" alt="" />
                 <p className=" text-center font-semibold mt-5">Figma</p>
                 <div className=" flex items-center justify-between px-10 mt-5 text-yellow-400">
@@ -174,7 +174,7 @@ const About = () => {
                 </div>
               </div>
 
-              <div className=" w-[188px] h-[188px] rounded bg-black">
+              <div className=" w-auto md:w-[188px] h-[188px] rounded bg-black">
                 <img
                   className=" block mx-auto pt-5"
                   src="photoshop.svg"
@@ -192,7 +192,7 @@ const About = () => {
                 </div>
               </div>
 
-              <div className=" w-[188px] h-[188px] rounded bg-black">
+              <div className=" w-auto md:w-[188px] h-[188px] rounded bg-black">
                 <img className=" block mx-auto pt-5" src="xd.svg" alt="" />
                 <p className=" text-center font-semibold mt-5">Adobe XD</p>
                 <div className=" flex items-center justify-between px-10 mt-5 text-yellow-400">
@@ -204,7 +204,7 @@ const About = () => {
                 </div>
               </div>
 
-              <div className=" w-[188px] h-[188px] rounded bg-black md:mt-5">
+              <div className=" w-auto md:w-[188px] h-[188px] rounded bg-black md:mt-5 lg:mt-0">
                 <img className=" block mx-auto pt-5" src="ai.svg" alt="" />
                 <p className=" text-center font-semibold mt-5">
                   Adobe Illustrator
@@ -218,7 +218,7 @@ const About = () => {
                 </div>
               </div>
 
-              <div className=" w-[188px] h-[188px] rounded bg-black md:mt-5">
+              <div className=" w-auto md:w-[188px] h-[188px] rounded bg-black md:mt-5 lg:mt-0">
                 <img className=" block mx-auto pt-5" src="pr.svg" alt="" />
                 <p className=" text-center font-semibold mt-5">
                   Adobe Premiere Pro
@@ -242,8 +242,8 @@ const About = () => {
               <span className=" bg-primary px-3 py-2">Skills</span>
             </h1>
 
-            <div className=" grid grid-cols-3 lg:grid-cols-3 mt-10">
-              <div className=" w-[188px] h-[188px] rounded bg-black">
+            <div className=" grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 md:gap-0 mt-10">
+              <div className=" w-auto md:w-[188px] h-[188px] rounded bg-black">
                 <img
                   className=" block mx-auto pt-5"
                   src="communication.svg"
@@ -259,7 +259,7 @@ const About = () => {
                 </div>
               </div>
 
-              <div className=" w-[188px] h-[188px] rounded bg-black">
+              <div className=" w-auto md:w-[188px] h-[188px] rounded bg-black">
                 <img className=" block mx-auto pt-5" src="flex.svg" alt="" />
                 <p className=" text-center font-semibold mt-5">Flexibility</p>
                 <div className=" flex items-center justify-between px-10 mt-5 text-yellow-400">
@@ -271,7 +271,7 @@ const About = () => {
                 </div>
               </div>
 
-              <div className=" w-[188px] h-[188px] rounded bg-black">
+              <div className=" w-auto md:w-[188px] h-[188px] rounded bg-black">
                 <img className=" block mx-auto pt-5" src="time.svg" alt="" />
                 <p className=" text-center font-semibold mt-5">
                   Time Management
@@ -285,7 +285,7 @@ const About = () => {
                 </div>
               </div>
 
-              <div className=" w-[188px] h-[188px] rounded bg-black md:mt-5">
+              <div className=" w-auto md:w-[188px] h-[188px] rounded bg-black md:mt-5 lg:mt-0">
                 <img
                   className=" block mx-auto pt-5"
                   src="leadership.svg"
@@ -301,7 +301,7 @@ const About = () => {
                 </div>
               </div>
 
-              <div className=" w-[188px] h-[188px] rounded bg-black md:mt-5">
+              <div className=" w-auto md:w-[188px] h-[188px] rounded bg-black md:mt-5 lg:mt-0">
                 <img
                   className=" block mx-auto pt-5"
                   src="creativity.svg"
@@ -349,14 +349,14 @@ const About = () => {
             </h1>
 
             <div className=" grid grid-cols-1 lg:grid-cols-2 mt-10">
-                <div className=" w-auto lg:w-[508px] h-[200px] rounded bg-black p-7">
+                <div className=" w-auto lg:w-[508px] h-[300px] md:h-[200px] rounded bg-black p-7">
                     <h1 className=" text-2xl font-medium">B.C.Sc (Business Information Systems)</h1>
                     <p className=" text-primary text-xl">University of Information Technology</p>
                     <p className=" text-lg">Duration : 2012 - 2017</p>
                     <p className=" text-lg">Specialization : Business Information Systems</p>
                 </div>
 
-                <div className=" w-auto lg:w-[508px] h-[200px] rounded bg-black p-7 md:mt-5">
+                <div className=" w-auto lg:w-[508px] h-[300px] md:h-[200px] rounded bg-black p-7 mt-5 md:mt-5 lg:mt-0">
                     <h1 className=" text-2xl font-medium">Diploma in Business Management</h1>
                     <p className=" text-primary text-xl">STI Myanmar University</p>
                     <p className=" text-lg">Duration : 2015 - 2017</p>
@@ -369,18 +369,18 @@ const About = () => {
 
         <section className=" container mx-auto px-5 md:px-20 pt-7 pb-10">
             <div className=" text-white">
-            <h1 className=" pt-10 text-center text-2xl font-bold">
+            <h1 className=" pt-10 text-center text-lg md:text-2xl font-bold">
             My Career-Enhancing
               <span className=" bg-primary px-3 py-2">Certificates</span>
             </h1>
 
             <div className=" grid grid-cols-1 lg:grid-cols-2 mt-10">
-                <div className=" w-auto lg:w-[508px] h-[132px] rounded bg-black p-7">
+                <div className=" w-auto lg:w-[508px] h-[150px] md:h-[132px] rounded bg-black p-7">
                     <h1 className=" text-2xl font-medium">Google UX Design Professional Certificate</h1>
                     <p className=" text-primary text-xl">Google | Coursea</p>
                 </div>
 
-                <div className=" w-auto lg:w-[508px] h-[132px] rounded bg-black p-7 md:mt-5">
+                <div className=" w-auto lg:w-[508px] h-[150px] md:h-[132px] rounded bg-black p-7 mt-5 md:mt-5 lg:mt-0">
                     <h1 className=" text-2xl font-medium">Certificate in Professional Graphic Design</h1>
                     <p className=" text-primary text-xl">The World Design Institute</p>
                 </div>
