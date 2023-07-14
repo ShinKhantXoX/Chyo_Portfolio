@@ -75,16 +75,68 @@ import Footer from '../components/Footer';
       category: 'Insurance',
       env: 'Website'
     },
+    {
+      path: 'case-cover-13.png',
+      desc: 'Nail Polish Advertising Design',
+      category: 'Ads Desgin',
+      env: 'Social Media Desgin'
+    },
+    {
+      path: 'case-cover-14.png',
+      desc: 'Freshgora | Backdrop Design',
+      category: 'Backdrop',
+      env: 'Event Desgin'
+    },
+    {
+      path: 'case-cover-15.png',
+      desc: 'Heartbeat Typography Design',
+      category: 'Typography Design',
+    },
+    {
+      path: 'case-cover-16.png',
+      desc: 'Airline Advertising Design',
+      category: 'Ads Desgin',
+      env: 'Social Media Desgin'
+    },
+    {
+      path: 'case-cover-17.png',
+      desc: 'Freshgora | Photo Booth Design',
+      category: 'Photo Booth',
+      env: 'Event Desgin'
+    },
+    {
+      path: 'case-cover-18.png',
+      desc: 'Freshgora | Flyer Design',
+      category: 'E-Commerce',
+      env: 'Mobile Application'
+    },
+    {
+      path: 'case-cover-19.png',
+      desc: 'Beauty Typography',
+      category: 'Typography Design',
+    },
+    {
+      path: 'case-cover-20.png',
+      desc: 'Happy New Year Illustration Design',
+      category: 'Perspective',
+      env: 'Illustration Design'
+    },
+    {
+      path: 'case-cover-21.png',
+      desc: 'Colors Rainbow | Magazine App',
+      category: 'Flyer',
+      env: 'Print Ads Design'
+    },
   ]
 
 const Work = () => {
   return (
     <div className=' min-h-screen bg-black'>
     
-    <section className=' w-[800px] mx-auto text-white'>
+    <section className=' w-[300px] md:w-[800px] mx-auto md:pt-10 text-white'>
         <img className=' mx-auto' src="profile.png" alt="" />
         <p className=' block text-xl text-center py-10'>Hello, I am Chyo!</p>
-        <p className=' w-[579px] text-2xl mx-auto'>An experienced <span className=' bg-primary px-3 py-2'>UX/UI designer</span> who is passionate 
+        <p className=' w-[300px] md:w-[579px] text-2xl mx-auto'>An experienced <span className=' bg-primary px-3 py-2'>UX/UI designer</span> who is passionate 
         <span className=' text-center block py-5'>about solving design challenges</span>
         <span className=' block text-center'>of digital products</span>
         </p>
@@ -103,16 +155,16 @@ const Work = () => {
             <p>Graphics</p>
           </div>
 
-          <div className=' container mx-auto px-5 md:px-20 py-7 flex flex-wrap gap-14'>
+          <div className=' container mx-auto px-5 md:px-20 py-7 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-10 lg:gap-14'>
             {items?.map((item,index) => {
               return (
-                <div key={index} className=' w-[331px] h-[376px] rounded-md bg-black'>
+                <div key={index} className=' md:w-[300px] w-[331px] h-[376px] rounded-md bg-black'>
                   <img src={item.path} alt="" />
                   <p className=' p-5 font-bold'>{item.desc}</p>
                   <div className=' px-5 flex items-center gap-5'>
                     <p>{item.category}</p>
-                    <span className=' block w-2 h-2 rounded-full bg-primary'></span>
-                    <p>{item.env}</p>
+                    {item?.env && <span className=' block w-2 h-2 rounded-full bg-primary'></span>}
+                    <p>{item?.env}</p>
                   </div>
                 </div>
               )
